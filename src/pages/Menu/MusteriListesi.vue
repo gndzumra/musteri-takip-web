@@ -15,7 +15,6 @@
                 class="table table-bordered dt-responsive nowrap w-100"
               >
                 <thead>
-                   
                   <tr>
                     <th>S.No.</th>
                     <th>Müşteri</th>
@@ -690,3 +689,17 @@
     </div>
   </div>
 </template>
+
+<script>
+import CustomerService from "../../service/CustomerService"
+export default {
+  data() {
+    return {};
+  },
+  methods: {
+    async initialize() {
+      await new CustomerService().getListAll();
+    },
+  },
+};
+</script>
