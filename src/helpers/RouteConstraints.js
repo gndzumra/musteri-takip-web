@@ -1,5 +1,5 @@
 export const Base =
-  process.env.NODE_ENV === "production" ? "https://localhost:5001/api/" : "https://localhost:5000/api";
+    process.env.NODE_ENV === "production" ? "http://localhost:5000/" : "http://localhost:5000/";
 
 
 const Authentication = Base + "auth/";
@@ -16,92 +16,92 @@ const SubProduct = Base + "subProduct/";
 
 
 export const ControllerRoutes = {
-  Authentication: Authentication,
-  Category: Category,
-  Customer: Customer,
-  CustomerType: CustomerType,
-  Order: Order,
-  Payment: Payment,
-  Product: Product,
-  Service: Service,
-  SmsSetting: SmsSetting,
-  Smtpsetting: Smtpsetting,
-  SubProduct: SubProduct,
+    Authentication: Authentication,
+    Category: Category,
+    Customer: Customer,
+    CustomerType: CustomerType,
+    Order: Order,
+    Payment: Payment,
+    Product: Product,
+    Service: Service,
+    SmsSetting: SmsSetting,
+    Smtpsetting: Smtpsetting,
+    SubProduct: SubProduct,
 };
 
 export const CRUDRoutes = {
-  ListAll(controller) {
-    return controller + "listAll";
-  },
-  List(controller) {
-    return controller + "list";
-  },
-  Create(controller) {
-    return controller + "create";
-  },
-  Update(controller, objectId) {
-    return controller + `update/${objectId}`;
-  },
-  Delete(controller, objectId) {
-    return controller + `delete/${objectId}`;
-  },
-  GetById(controller, objectId) {
-    return controller + `get/${objectId}`;
-  },
-  GetCount(controller) {
-    return controller + "count";
-  },
+    ListAll(controller) {
+        return controller + "listAll";
+    },
+    List(controller) {
+        return controller + "list";
+    },
+    Create(controller) {
+        return controller + "create";
+    },
+    Update(controller, objectId) {
+        return controller + `update/${objectId}`;
+    },
+    Delete(controller, objectId) {
+        return controller + `delete/${objectId}`;
+    },
+    GetById(controller, objectId) {
+        return controller + `get/${objectId}`;
+    },
+    GetCount(controller) {
+        return controller + "count";
+    },
 };
 
 export const AuthenticateRoutes = {
-  Authenticate() {
-    return Authentication + "login";
-  },
-  AuthenticateByRefreshToken() {
-    return Authentication + "logout";
-  },
+    Login() {
+        return Authentication + "login";
+    },
+    Logout() {
+        return Authentication + "logout";
+    },
 };
 
 export const CategoryRoutes = {
-  /* CRUD */
+    /* CRUD */
 };
 
 export const CustomerRoutes = {
-  /* CRUD */
+    /* CRUD */
 };
 
 export const CustomerTypeRoutes = {
-  /* CRUD */
+    /* CRUD */
 };
 
 export const OrderRoutes = {
-  /* CRUD */
+    /* CRUD */
 };
 
 export const PaymentRoutes = {
-  /* CRUD */
+    /* CRUD */
 };
 
 export const ProductRoutes = {
-  /* CRUD */
+    /* CRUD */
 };
 
 export const ServiceRoutes = {
-  /* CRUD BAK */
+    /* CRUD BAK */
 };
 
 export const SmsSettingRoutes = {
-  SetSmsSetting() {
-    return SmsSetting + "set";
-  },
+    SetSmsSetting() {
+        return SmsSetting + "set";
+    },
 };
 
 export const SmtpSettingRoutes = {
-  SetSmtpSetting() {
-    return Smtpsetting + "set";
-  },
+    SetSmtpSetting() {
+        return Smtpsetting + "set";
+    },
 };
 
 export const SubProductRoutes = {
-  /* CRUD */
+    /* CRUD */
 }

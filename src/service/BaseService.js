@@ -1,7 +1,6 @@
 /* eslint-disable */
 import axios from "axios";
 import { CRUDRoutes } from "@/helpers/RouteConstraints";
-/* import { ErrorConstraints, ReturnConstraints } from "@/helpers/Constraints"; */
 
 export default class BaseService {
     constructor(controllerRoute) {
@@ -16,7 +15,6 @@ export default class BaseService {
     }
 
     async request(method, url, data = {}) {
-        /* try { */
         let result = await axios({
             method: method,
             url: url,
@@ -24,11 +22,7 @@ export default class BaseService {
             data: data,
         });
         return result.data;
-        /* } catch (e) {
-          if (e.response !== undefined && e.response.status === 401) {
-            return (await new AccountService().loginByRefreshToken()) ? ReturnConstraints.REFRESH : null;
-          } else throw ErrorConstraints.NETWORK_ERROR;
-        } */
+
     }
 
 

@@ -184,7 +184,7 @@
               </a>
             </li>
 
-            <li class="menu-title" key="t-apps">CARİ HAREKETLER</li>
+            <li class="menu-title" key="">CARİ HAREKETLER</li>
 
             <li>
               <a href="satis-yap" class="waves-effect">
@@ -200,7 +200,7 @@
               </a>
             </li>
 
-            <li class="menu-title" key="t-apps">TANIMLAR</li>
+            <li class="menu-title">TANIMLAR</li>
 
             <li>
               <a href="musteri-ekle" class="waves-effect">
@@ -231,7 +231,7 @@
               </a>
             </li>
 
-            <li class="menu-title" key="t-apps">AYARLAR</li>
+            <li class="menu-title">AYARLAR</li>
 
             <li>
               <a href="javascript: void(0);" class="has-arrow waves-effect">

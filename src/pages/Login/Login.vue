@@ -74,6 +74,7 @@
                     <form class="form-horizontal" action="index.php">
                       <div class="mb-3">
                         <input
+                          v-model="loginModel.username"
                           type="text"
                           class="form-control"
                           id="username"
@@ -84,6 +85,7 @@
                       <div class="mb-3">
                         <div class="input-group auth-pass-inputgroup">
                           <input
+                            v-model="loginModel.password"
                             type="password"
                             class="form-control"
                             placeholder="Şifre"
@@ -113,6 +115,7 @@
 
                       <div class="mt-3 d-grid">
                         <button
+                          @click.prevent="login()"
                           class="btn btn-primary waves-effect waves-light"
                           type="submit"
                         >
@@ -136,19 +139,32 @@
           </div>
         </div>
       </div>
-
-    
     </body>
   </div>
 </template>
 
 
 <script>
+import AuthenticateService from "../../service/AuthenticateService";
+/* 
+import MessageBox from "../../helpers/components/MessageBox";
+import axios from "axios";
+ */
 export default {
   data() {
     return {
       date: new Date().getFullYear(),
+      loginModel: {},
     };
+  },
+  methods: {
+    async login() {
+      await new AuthenticateService()
+        .login(this.loginModel)
+        .then((response) => {
+          console.log(response);
+        });
+    },
   },
 };
 </script>
