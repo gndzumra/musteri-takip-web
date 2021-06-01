@@ -64,11 +64,11 @@ export const CategoryRoutes = {
 };
 
 export const CustomerRoutes = {
-    /* CRUD */
+
 };
 
 export const CustomerTypeRoutes = {
-    /* CRUD */
+
 };
 
 export const OrderRoutes = {
@@ -80,7 +80,9 @@ export const PaymentRoutes = {
 };
 
 export const ProductRoutes = {
-    /* CRUD */
+    GetAllById(customerId) {
+        return Product + `getallbyid/${customerId}`
+    }
 };
 
 export const ServiceRoutes = {

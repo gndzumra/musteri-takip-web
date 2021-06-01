@@ -28,14 +28,9 @@ export default class AuthenticateService extends BaseService {
     }
 
     async login(model) {
-
         return await this.request("POST", AuthenticateRoutes.Login(), model)
-
-
-
     }
     async logout(model) {
         return await this.request("POST", AuthenticateRoutes.Logout(), model);
     }
-
 }

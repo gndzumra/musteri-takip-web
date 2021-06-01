@@ -29,10 +29,12 @@
 
                   <tbody>
                     <tr v-for="(value, key) in customers" :key="key">
-                      <td>{{ value.Id }}</td>
+                      <td>{{ value.id }}</td>
                       <td>{{ value.name }}</td>
-                      <td>{{ value.product }}</td>
-                      <td>{{ value.balance }}</td>
+
+                      <td>{{ value.products }}</td>
+                      <td>{{ value.type }}</td>
+
                       <td>{{ value.mobilePhone }}</td>
                       <td>{{ value.balance }} <span> ₺</span></td>
                       <td>
@@ -69,11 +71,11 @@
                   edit
                 </button> -->
               </div>
+              <!-- {{ customers }} -->
+              {{ deneme }}
             </div>
           </div>
-          <!-- end col -->
         </div>
-        <!-- end row -->
       </div>
     </div>
     <v-dialog
@@ -91,15 +93,19 @@
   </div>
 </template>
 
+
 <script>
 import MessageBox from "../../helpers/components/MessageBox";
 import CustomerService from "../../service/CustomerService";
+import CustomerTypeService from "../../service/CustomerTypeService";
+import ProductService from "../../service/ProductService";
 import CustomerEdit from "./components/CustomerEdit";
 export default {
   data() {
     return {
       customers: [],
-
+      customerProduct: [],
+      deneme: null,
       signalModel: {
         changes: false,
         returnValues: undefined,
@@ -119,13 +125,27 @@ export default {
     async initialize() {
       await new CustomerService().getListAll().then((response) => {
         this.customers = response.data;
-        console.log(response);
+        this.customers.forEach((customer) => {
+          new CustomerTypeService()
+            .getById(customer.customerTypeId)
+            .then((customerType) => {
+              customer.type = customerType.data.type;
+              //this.deneme = customer;
+            });
+        });
+      });
+      this.customers.forEach((element) => {
+        new ProductService().getallbyid(element.id).then((x) => {
+          x.data.forEach((a) => {
+            this.deneme = a;
+            element.products = a.serviceName;
+          });
+        });
       });
     },
     edit(customerId) {
       new CustomerService().edit(customerId).then((response) => {
-        this.customers = response.list;
-        console.log(response);
+        this.customers = response.data;
       });
     },
     collectionAdd() {},

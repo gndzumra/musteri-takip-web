@@ -1,5 +1,5 @@
 <template>
-  <div class="page-content">
+  <div class="page-content" id="app">
     <div class="container-fluid">
       <!-- start page title -->
       <div class="row">
@@ -48,7 +48,7 @@
                   type="button"
                   class="btn btn-primary btn-lg waves-effect waves-light"
                 >
-                  Kaydet
+                  <span style="color: white"> Kaydet </span>
                 </button>
               </div>
             </div>

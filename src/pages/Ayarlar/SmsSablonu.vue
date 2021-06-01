@@ -48,7 +48,7 @@
                   type="button"
                   class="btn btn-primary btn-lg waves-effect waves-light"
                 >
-                  Kaydet
+                  <span style="color: white"> Kaydet </span>
                 </button>
               </div>
             </div>

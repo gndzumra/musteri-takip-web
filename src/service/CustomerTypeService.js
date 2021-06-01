@@ -5,4 +5,6 @@ export default class CustomerTypeService extends BaseService {
     constructor() {
         super(ControllerRoutes.CustomerType);
     }
+
+
 }

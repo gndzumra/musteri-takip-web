@@ -1,170 +1,162 @@
 <template>
   <div class="page-content">
     <div class="container-fluid">
+      <!-- start page title -->
       <div class="row">
-        <div class="col-8">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Ürün Fiyatlandırması</h4>
-              <p class="card-title-desc">
-                Ürünlerinizin fiyatlarını bu alandan müşteri kategorilendirerek
-                yapabilirsiniz.
-              </p>
+        <div class="col-12">
+          <div
+            class="page-title-box d-sm-flex align-items-center justify-content-between"
+          >
+            <h4 class="mb-sm-0 font-size-18">Kullanıcılar</h4>
 
-              <div class="table-responsive">
-                <table
-                  class="table table-editable table-nowrap align-middle table-edits"
-                >
-                  <thead>
-                    <tr>
-                      <th>S.NO</th>
-                      <th>Ürün Adı</th>
-                      <th width="30">F1</th>
-                      <th></th>
-                      <th width="30">F2</th>
-                      <th></th>
-                      <th width="30">F3</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr data-id="1">
-                      <td style="width: 80px">1</td>
-                      <td>Eko Cloud Hosting</td>
-                      <td data-field="f1fiyat">200</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td data-field="f2fiyat">250</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td data-field="f3fiyat">300</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td style="width: 100px">
-                        <a
-                          class="btn btn-outline-secondary btn-sm edit"
-                          title="Düzenle"
-                        >
-                          <i class="fas fa-pencil-alt"></i>
-                        </a>
-                      </td>
-                    </tr>
-
-                    <tr data-id="1">
-                      <td style="width: 80px">1</td>
-                      <td>Eko Cloud Hosting</td>
-                      <td data-field="f1fiyat">200</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td data-field="f2fiyat">250</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td data-field="f3fiyat">300</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td style="width: 100px">
-                        <a
-                          class="btn btn-outline-secondary btn-sm edit"
-                          title="Düzenle"
-                        >
-                          <i class="fas fa-pencil-alt"></i>
-                        </a>
-                      </td>
-                    </tr>
-
-                    <tr data-id="1">
-                      <td style="width: 80px">1</td>
-                      <td>Eko Cloud Hosting</td>
-                      <td data-field="f1fiyat">200</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td data-field="f2fiyat">250</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td data-field="f3fiyat">300</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td style="width: 100px">
-                        <a
-                          class="btn btn-outline-secondary btn-sm edit"
-                          title="Düzenle"
-                        >
-                          <i class="fas fa-pencil-alt"></i>
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+            <div class="page-title-right">
+              <ol class="breadcrumb m-0">
+                <li class="breadcrumb-item">
+                  <a href="javascript: void(0);">Ayarlar</a>
+                </li>
+                <li class="breadcrumb-item active">Kullanıcılar</li>
+              </ol>
             </div>
           </div>
         </div>
-        <!-- end col -->
-
-        <div class="col-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Ürünlerin Yıllık Zam Oranları</h4>
-              <p class="card-title-desc">
-                Müşteri tiplerine bu alandan yıllık zam oranını
-                belirtebilirsiniz.
-              </p>
-
-              <div class="table-responsive">
-                <table
-                  class="table table-editable table-nowrap align-middle table-edits"
-                >
-                  <thead>
-                    <tr>
-                      <th>S.NO</th>
-                      <th>Müşteri Tipi</th>
-                      <th>%</th>
-                      <th>Zam Oranı (%)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr data-id="1">
-                      <td style="width: 80px">1</td>
-                      <td>F1</td>
-                      <td>%</td>
-                      <td data-field="f1fiyat">10</td>
-                      <td style="width: 100px">
-                        <a
-                          class="btn btn-outline-secondary btn-sm edit"
-                          title="Düzenle"
-                        >
-                          <i class="fas fa-pencil-alt"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr data-id="1">
-                      <td style="width: 80px">2</td>
-                      <td>F2</td>
-                      <td>%</td>
-                      <td data-field="f1fiyat">7</td>
-                      <td style="width: 100px">
-                        <a
-                          class="btn btn-outline-secondary btn-sm edit"
-                          title="Düzenle"
-                        >
-                          <i class="fas fa-pencil-alt"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr data-id="1">
-                      <td style="width: 80px">3</td>
-                      <td>F3</td>
-                      <td>%</td>
-                      <td data-field="f1fiyat">4</td>
-                      <td style="width: 100px">
-                        <a
-                          class="btn btn-outline-secondary btn-sm edit"
-                          title="Düzenle"
-                        >
-                          <i class="fas fa-pencil-alt"></i>
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end col -->
       </div>
-      <!-- end row -->
+      <!-- end page title -->
+
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Kullanıcı Ekle</h4>
+              <p class="card-title-desc">
+                Lütfen aşağıda istenen tüm bilgileri
+                <code>eksiksiz ve doğru </code>giriniz.
+              </p>
+
+              <div class="mb-3 row">
+                <label for="example-text-input" class="col-md-2 col-form-label"
+                  >Kullanıcı Adı</label
+                >
+                <div class="col-md-10">
+                  <input
+                    class="form-control"
+                    type="text"
+                    value=""
+                    id="example-text-input"
+                    placeholder="Kullanıcı adı giriniz"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3 row">
+                <label for="example-text-input" class="col-md-2 col-form-label"
+                  >Şifre</label
+                >
+                <div class="col-md-10">
+                  <input
+                    class="form-control"
+                    type="text"
+                    value=""
+                    id="example-text-input"
+                    placeholder="Şifre giriniz"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3 row">
+                <label for="example-text-input" class="col-md-2 col-form-label"
+                  >Şifte Tekrar</label
+                >
+                <div class="col-md-10">
+                  <input
+                    class="form-control"
+                    type="text"
+                    value=""
+                    id="example-text-input"
+                    placeholder="Şifrenizi tekrar giriniz"
+                  />
+                </div>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-primary waves-effect waves-light"
+              >
+                Kullanıcı Ekle
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- end col -->
+
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Mevcut Kullanıcılar</h4>
+
+              <div class="table-responsive">
+                <table class="table table-striped mb-0">
+                  <thead>
+                    <tr>
+                      <th>S.No.</th>
+                      <th>Kullanıcı Adı</th>
+                      <th>İşlem</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="(value, key) in customers" :key="key">
+                      <th scope="row">{{ value.id }}</th>
+                      <td>{{ value.name }}</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn btn-success btn-sm waves-effect waves-light mr-5"
+                        >
+                          <i
+                            class="bx bxs-pencil font-size-16 align-middle me-2"
+                            style="color: white"
+                          >
+                          </i>
+                          <span style="color: white"> Düzenle </span>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-sm waves-effect waves-light ml-5"
+                        >
+                          <span style="color: white; margin-right: 5px">
+                            Kullanıcıyı Sil
+                          </span>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- end row -->
   </div>
 </template>
+
+<script>
+import CustomerService from "../../service/CustomerService";
+export default {
+  data() {
+    return {
+      customers: [],
+    };
+  },
+  created() {
+    this.initialize();
+  },
+  methods: {
+    initialize() {
+      new CustomerService().getListAll().then((response) => {
+        this.customers = response.data;
+      });
+    },
+  },
+};
+</script>
