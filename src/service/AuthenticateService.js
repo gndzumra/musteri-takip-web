@@ -4,14 +4,21 @@ import BaseService from "./BaseService";
 
 import axios from "axios";
 
-
 export default class AuthenticateService extends BaseService {
-    async request(method, url, headers, data = {}) {
+
+    getRequestHeader() {
+        return {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + localStorage.getItem("token"),
+        };
+    };
+
+    async request(method, url, data = {}) {
         try {
             let result = await axios({
                 method: method,
                 url: url,
-                headers: headers,
+                headers: this.getRequestHeader(),
                 data: data,
             });
             return result.data;
@@ -21,7 +28,11 @@ export default class AuthenticateService extends BaseService {
     }
 
     async login(model) {
-        return await this.request("POST", AuthenticateRoutes.Login(), model);
+
+        return await this.request("POST", AuthenticateRoutes.Login(), model)
+
+
+
     }
     async logout(model) {
         return await this.request("POST", AuthenticateRoutes.Logout(), model);

@@ -163,6 +163,11 @@ export default {
         .login(this.loginModel)
         .then((response) => {
           console.log(response);
+          let token = response.data;
+          localStorage.setItem("token", token);
+          if (token) {
+            this.$router.push("/");
+          }
         });
     },
   },

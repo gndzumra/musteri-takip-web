@@ -1,5 +1,5 @@
 export const Base =
-    process.env.NODE_ENV === "production" ? "http://localhost:5000/" : "http://localhost:5000/";
+    process.env.NODE_ENV === "production" ? "http://192.168.2.90:5000/" : "http://192.168.2.90:5000/";
 
 
 const Authentication = Base + "auth/";
@@ -31,7 +31,7 @@ export const ControllerRoutes = {
 
 export const CRUDRoutes = {
     ListAll(controller) {
-        return controller + "listAll";
+        return controller + "getall";
     },
     List(controller) {
         return controller + "list";
@@ -40,16 +40,13 @@ export const CRUDRoutes = {
         return controller + "create";
     },
     Update(controller, objectId) {
-        return controller + `update/${objectId}`;
+        return controller + `edit/${objectId}`;
     },
     Delete(controller, objectId) {
         return controller + `delete/${objectId}`;
     },
     GetById(controller, objectId) {
         return controller + `get/${objectId}`;
-    },
-    GetCount(controller) {
-        return controller + "count";
     },
 };
 

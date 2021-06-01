@@ -25,14 +25,18 @@ import EPostaSablonu from "./pages/Ayarlar/EPostaSablonu";
 import Kullanicilar from "./pages/Ayarlar/Kullanicilar";
 import SmsSablonu from "./pages/Ayarlar/SmsSablonu";
 
+
+import CustomerEdit from "./pages/Menu/components/CustomerEdit";
+
 //Login
 import Login from "./pages/Login/Login";
 
 Vue.use(VueRouter);
 
-export const routes = [
-    {
-        path: "/", component: IndexLayout, meta: { requiresAuth: false },
+export const routes = [{
+        path: "/",
+        component: IndexLayout,
+        meta: { requiresAuth: false },
         children: [
             { path: "/", component: Home, name: "home", meta: { requiresAuth: false } },
 
@@ -51,6 +55,9 @@ export const routes = [
         ]
     },
     { path: "/login", component: Login, name: "login", meta: { requiresAuth: false } },
+
+    { path: "/customer-edit", component: CustomerEdit, name: "customer-edit", meta: { requiresAuth: false } },
+
     { path: "*", redirect: "/" },
 ]
 

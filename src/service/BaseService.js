@@ -10,7 +10,7 @@ export default class BaseService {
     getRequestHeader() {
         return {
             "Content-Type": "application/json",
-            /* Authorization: "Bearer " + localStorage.getItem("webToken"), */
+            Authorization: "Bearer " + localStorage.getItem("token"),
         };
     }
 
