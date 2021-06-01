@@ -70,6 +70,7 @@ export default {
   methods: {
     initialize() {
       new ProductService().getListAll().then((response) => {
+        /* console.log(response); */
         this.products = response.data;
       });
     },

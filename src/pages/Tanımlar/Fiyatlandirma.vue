@@ -28,52 +28,14 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr data-id="1">
-                      <td style="width: 80px">1</td>
-                      <td>Eko Cloud Hosting</td>
-                      <td data-field="f1fiyat">200</td>
+                    <tr data-id="1" v-for="(value, key) in products" :key="key">
+                      <td style="width: 80px">{{ value.id }}</td>
+                      <td>{{ value.name }}</td>
+                      <td data-field="f1fiyat">{{ value.price1 }}</td>
                       <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td data-field="f2fiyat">250</td>
+                      <td data-field="f2fiyat">{{ value.price2 }}</td>
                       <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td data-field="f3fiyat">300</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td style="width: 100px">
-                        <a
-                          class="btn btn-outline-secondary btn-sm edit"
-                          title="Düzenle"
-                        >
-                          <i class="fas fa-pencil-alt"></i>
-                        </a>
-                      </td>
-                    </tr>
-
-                    <tr data-id="1">
-                      <td style="width: 80px">1</td>
-                      <td>Eko Cloud Hosting</td>
-                      <td data-field="f1fiyat">200</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td data-field="f2fiyat">250</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td data-field="f3fiyat">300</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td style="width: 100px">
-                        <a
-                          class="btn btn-outline-secondary btn-sm edit"
-                          title="Düzenle"
-                        >
-                          <i class="fas fa-pencil-alt"></i>
-                        </a>
-                      </td>
-                    </tr>
-
-                    <tr data-id="1">
-                      <td style="width: 80px">1</td>
-                      <td>Eko Cloud Hosting</td>
-                      <td data-field="f1fiyat">200</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td data-field="f2fiyat">250</td>
-                      <td class="lira"><i class="bx bx-lira"></i></td>
-                      <td data-field="f3fiyat">300</td>
+                      <td data-field="f3fiyat">{{ value.price3 }}</td>
                       <td class="lira"><i class="bx bx-lira"></i></td>
                       <td style="width: 100px">
                         <a
@@ -114,39 +76,15 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr data-id="1">
+                    <tr
+                      data-id="1"
+                      v-for="(value, key) in customerTypes"
+                      :key="key"
+                    >
                       <td style="width: 80px">1</td>
-                      <td>F1</td>
+                      <td>{{ value.type }}</td>
                       <td>%</td>
-                      <td data-field="f1fiyat">10</td>
-                      <td style="width: 100px">
-                        <a
-                          class="btn btn-outline-secondary btn-sm edit"
-                          title="Düzenle"
-                        >
-                          <i class="fas fa-pencil-alt"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr data-id="1">
-                      <td style="width: 80px">2</td>
-                      <td>F2</td>
-                      <td>%</td>
-                      <td data-field="f1fiyat">7</td>
-                      <td style="width: 100px">
-                        <a
-                          class="btn btn-outline-secondary btn-sm edit"
-                          title="Düzenle"
-                        >
-                          <i class="fas fa-pencil-alt"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr data-id="1">
-                      <td style="width: 80px">3</td>
-                      <td>F3</td>
-                      <td>%</td>
-                      <td data-field="f1fiyat">4</td>
+                      <td data-field="f1fiyat">{{ value.raiseRate }}</td>
                       <td style="width: 100px">
                         <a
                           class="btn btn-outline-secondary btn-sm edit"
@@ -168,3 +106,31 @@
     </div>
   </div>
 </template>
+
+
+<script>
+import ProductService from "../../service/ProductService";
+import CustomerTypeService from "../../service/CustomerTypeService";
+export default {
+  data() {
+    return {
+      products: [],
+      customerTypes: [],
+    };
+  },
+  created() {
+    this.initialize();
+  },
+  methods: {
+    initialize() {
+      new ProductService().getListAll().then((response) => {
+        this.products = response.data;
+      });
+      new CustomerTypeService().getListAll().then((response) => {
+        console.log(response);
+        this.customerTypes = response.data;
+      });
+    },
+  },
+};
+</script>
