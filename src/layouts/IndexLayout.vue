@@ -24,7 +24,6 @@
           </div>
 
           <button
-            type="button"
             class="btn btn-sm px-3 font-size-16 header-item waves-effect"
             id="vertical-menu-btn"
           >
@@ -35,7 +34,6 @@
         <div class="d-flex">
           <div class="dropdown d-none d-lg-inline-block ms-1">
             <button
-              type="button"
               class="btn header-item noti-icon waves-effect"
               data-bs-toggle="dropdown"
               aria-haspopup="true"
@@ -92,7 +90,6 @@
 
           <div class="dropdown d-none d-lg-inline-block ms-1">
             <button
-              type="button"
               class="btn header-item noti-icon waves-effect"
               data-toggle="fullscreen"
             >
@@ -102,7 +99,6 @@
 
           <div class="dropdown d-inline-block">
             <button
-              type="button"
               class="btn header-item waves-effect"
               id="page-header-user-dropdown"
               data-bs-toggle="dropdown"
@@ -140,7 +136,6 @@
 
           <div class="dropdown d-inline-block">
             <button
-              type="button"
               class="btn header-item noti-icon right-bar-toggle waves-effect"
             >
               <i class="bx bx-cog bx-spin"></i>

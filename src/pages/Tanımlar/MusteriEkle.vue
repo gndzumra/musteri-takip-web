@@ -272,28 +272,18 @@
                             outlined
                             dense
                           ></v-select>
-                        </div>
-
-                        <div class="col-md-2 align-self-center">
-                          <div class="d-grid mb-8">
-                            <input
-                              data-repeater-delete
-                              type="button"
-                              class="btn btn-primary"
-                              value="Sil"
-                            />
+                          <div
+                            v-for="(value, key) in selectedNewProduct"
+                            :key="key"
+                          >
+                            <h5>
+                              {{ key + 1 }}. <b>{{ value }} </b>
+                            </h5>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <input
-                    data-repeater-create
-                    type="button"
-                    class="btn btn-success mt-3 mt-lg-0"
-                    value="Bir Ürün Daha Ekle"
-                  />
                 </div>
               </div>
             </div>
@@ -303,7 +293,6 @@
                 <div class="card-body">
                   <div class="d-grid gap-2">
                     <button
-                      type="button"
                       class="btn btn-primary btn-lg waves-effect waves-light"
                       @click.prevent="createCustomer()"
                     >

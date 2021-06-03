@@ -63,9 +63,9 @@
               </div>
 
               <div class="mb-3 row">
-                <label for="example-text-input" class="col-md-2 col-form-label"
-                  >Şifte Tekrar</label
-                >
+                <label for="example-text-input" class="col-md-2 col-form-label">
+                  Şifte Tekrar
+                </label>
                 <div class="col-md-10">
                   <input
                     class="form-control"
@@ -77,10 +77,7 @@
                 </div>
               </div>
 
-              <button
-                type="button"
-                class="btn btn-primary waves-effect waves-light"
-              >
+              <button class="btn btn-primary waves-effect waves-light">
                 Kullanıcı Ekle
               </button>
             </div>
@@ -108,21 +105,19 @@
                       <td>{{ value.name }}</td>
                       <td>
                         <button
-                          type="button"
                           class="btn btn-success btn-sm waves-effect waves-light mr-5"
                         >
                           <i
                             class="bx bxs-pencil font-size-16 align-middle me-2"
-                            style="color: white"
+                            style=""
                           >
                           </i>
-                          <span style="color: white"> Düzenle </span>
+                          <span style=""> Düzenle </span>
                         </button>
                         <button
-                          type="button"
                           class="btn btn-danger btn-sm waves-effect waves-light ml-5"
                         >
-                          <span style="color: white; margin-right: 5px">
+                          <span style="margin-right: 5px">
                             Kullanıcıyı Sil
                           </span>
                         </button>

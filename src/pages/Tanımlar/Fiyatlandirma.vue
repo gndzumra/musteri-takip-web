@@ -127,7 +127,6 @@ export default {
         this.products = response.data;
       });
       new CustomerTypeService().getListAll().then((response) => {
-        console.log(response);
         this.customerTypes = response.data;
       });
     },

@@ -102,10 +102,7 @@
                 </div>
               </div>
 
-              <button
-                type="button"
-                class="btn btn-primary waves-effect waves-light"
-              >
+              <button class="btn btn-primary waves-effect waves-light">
                 Ürünü Ekle
               </button>
             </div>

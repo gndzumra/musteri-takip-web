@@ -32,7 +32,7 @@
                       <td>{{ value.id }}</td>
                       <td>{{ value.name }}</td>
 
-                      <td>{{ value.products }}</td>
+                      <td v-for="(v, k) in value.products" :key="k">{{ v }}</td>
                       <td>{{ value.type }}</td>
 
                       <td>{{ value.mobilePhone }}</td>
@@ -72,7 +72,6 @@
                 </button> -->
               </div>
               <!-- {{ customers }} -->
-              {{ deneme }}
             </div>
           </div>
         </div>
@@ -97,7 +96,6 @@
 <script>
 import MessageBox from "../../helpers/components/MessageBox";
 import CustomerService from "../../service/CustomerService";
-import CustomerTypeService from "../../service/CustomerTypeService";
 import ProductService from "../../service/ProductService";
 import CustomerEdit from "./components/CustomerEdit";
 export default {
@@ -122,23 +120,12 @@ export default {
     this.initialize();
   },
   methods: {
-    async initialize() {
-      await new CustomerService().getListAll().then((response) => {
+    initialize() {
+      new CustomerService().getListAll().then((response) => {
         this.customers = response.data;
         this.customers.forEach((customer) => {
-          new CustomerTypeService()
-            .getById(customer.customerTypeId)
-            .then((customerType) => {
-              customer.type = customerType.data.type;
-              //this.deneme = customer;
-            });
-        });
-      });
-      this.customers.forEach((element) => {
-        new ProductService().getallbyid(element.id).then((x) => {
-          x.data.forEach((a) => {
-            this.deneme = a;
-            element.products = a.serviceName;
+          new ProductService().getallbyid(customer.id).then((res) => {
+            customer.products = res.data;
           });
         });
       });

@@ -35,7 +35,6 @@
 
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i class="bx bxs-pencil font-size-16 align-middle me-2">

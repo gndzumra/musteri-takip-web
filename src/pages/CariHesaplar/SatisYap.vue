@@ -79,7 +79,6 @@
                         <div class="d-grid">
                           <input
                             data-repeater-delete
-                            type="button"
                             class="btn btn-primary"
                             value="Sil"
                           />
@@ -91,7 +90,6 @@
 
                 <input
                   data-repeater-create
-                  type="button"
                   class="btn btn-success mt-3 mt-lg-0"
                   value="Bir Ürün Daha Ekle"
                 />
@@ -105,10 +103,7 @@
           <div class="card">
             <div class="card-body">
               <div class="d-grid gap-2">
-                <button
-                  type="button"
-                  class="btn btn-primary btn-lg waves-effect waves-light"
-                >
+                <button class="btn btn-primary btn-lg waves-effect waves-light">
                   Satışı Kaydet
                 </button>
               </div>

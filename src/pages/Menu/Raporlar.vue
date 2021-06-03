@@ -36,7 +36,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -45,7 +44,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -62,7 +60,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -71,7 +68,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -88,7 +84,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -97,7 +92,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -114,7 +108,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -123,7 +116,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -140,7 +132,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -149,7 +140,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -167,7 +157,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -176,7 +165,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -193,7 +181,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -202,7 +189,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -219,7 +205,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -228,7 +213,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -245,7 +229,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -254,7 +237,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -271,7 +253,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -280,7 +261,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -297,7 +277,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -306,7 +285,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -323,7 +301,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -332,7 +309,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -349,7 +325,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -358,7 +333,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -375,7 +349,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -384,7 +357,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -401,7 +373,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -410,7 +381,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -427,7 +397,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -436,7 +405,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -453,7 +421,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -462,7 +429,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -479,7 +445,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -488,7 +453,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -505,7 +469,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -514,7 +477,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -531,7 +493,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -540,7 +501,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -557,7 +517,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -566,7 +525,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -583,7 +541,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -592,7 +549,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -609,7 +565,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -618,7 +573,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -635,7 +589,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -644,7 +597,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i
@@ -661,7 +613,6 @@
                     <td>540 <span> ₺</span></td>
                     <td>
                       <button
-                        type="button"
                         class="btn btn-success btn-sm waves-effect waves-light"
                       >
                         <i
@@ -670,7 +621,6 @@
                         >Düzenle
                       </button>
                       <button
-                        type="button"
                         class="btn btn-danger btn-sm waves-effect waves-light"
                       >
                         <i class="bx bx-lira font-size-16 align-middle me-2"></i

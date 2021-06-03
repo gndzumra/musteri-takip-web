@@ -92,11 +92,7 @@
                             aria-label="Password"
                             aria-describedby="password-addon"
                           />
-                          <button
-                            class="btn btn-light"
-                            type="button"
-                            id="password-addon"
-                          >
+                          <button class="btn btn-light" id="password-addon">
                             <i class="mdi mdi-eye-outline"></i>
                           </button>
                         </div>
@@ -162,7 +158,6 @@ export default {
       await new AuthenticateService()
         .login(this.loginModel)
         .then((response) => {
-          console.log(response);
           let token = response.data;
           localStorage.setItem("token", token);
           if (token) {

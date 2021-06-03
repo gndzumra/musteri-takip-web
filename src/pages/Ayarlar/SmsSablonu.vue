@@ -44,10 +44,7 @@
           <div class="card">
             <div class="card-body">
               <div class="d-grid gap-2">
-                <button
-                  type="button"
-                  class="btn btn-primary btn-lg waves-effect waves-light"
-                >
+                <button class="btn btn-primary btn-lg waves-effect waves-light">
                   <span style="color: white"> Kaydet </span>
                 </button>
               </div>
